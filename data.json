@@ -1,0 +1,39 @@
+[
+    {
+        "id": "org_a9d336",
+        "name": "Overall Supplier Rank",
+        "hq_region": "US",
+        "hq_city_name": "Arlington County",
+        "website": "www.aes.com",
+        "industry_id": "ind_3b9869",
+        "rank": "high",
+        "industry_rank": "medium",
+        "region_rank": "medium",
+        "has_related_environmental_report": true
+    },
+    {
+        "id": "org_a9d336",
+        "name": "Location Rank",
+        "hq_region": "US",
+        "hq_city_name": "Arlington County",
+        "website": "www.aes.com",
+        "industry_id": "ind_3b9869",
+        "rank": "high",
+        "industry_rank": "high",
+        "region_rank": "medium",
+        "has_related_environmental_report": true
+    },
+    {
+        "id": "org_a9d336",
+        "name": "Industry Rank",
+        "hq_region": "US",
+        "hq_city_name": "Arlington County",
+        "website": "www.aes.com",
+        "industry_id": "ind_3b9869",
+        "rank": "high",
+        "industry_rank": "low",
+        "region_rank": "medium",
+        "has_related_environmental_report": true
+    }
+    
+]

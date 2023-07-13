@@ -1,0 +1,64 @@
+[{
+    "id": "org_a9d336",
+    "name": "aes corporation",
+    "hq_region": "US",
+    "hq_city_name": "Arlington County",
+    "website": "www.aes.com",
+    "industry_id": "ind_3b9869",
+    "rank": "high",
+    "industry_rank": "very_high",
+    "region_rank": "medium",
+    "has_related_environmental_report": true,
+    "performances": [
+        {
+            "year": 2015,
+            "region": "GLOBAL",
+            "emission_factor": 5.01622,
+            "scope_1_emissions": 68634000000,
+            "scope_2_emissions": 368100000,
+            "scope_3_emissions": 6241200000,
+            "scope_1_and_2_emissions": 69002100000,
+            "total_emissions": 75243300000,
+            "revenue": 15000000000,
+            "revenue_currency": "USD",
+            "source": {
+                "url": "https://www.aes.com/.../SustainabilityReport.pdf"
+            }
+        }
+    ],
+    "cdp": {
+        "last_retrieved_at": "2023-01-04",
+        "data": [
+            {
+                "url": "https://www.cdp.net/.../AES",
+                "retrieved_at": "2023-01-04"
+            }
+        ]
+    },
+    "sbti": {
+        "last_retrieved_at": "2023-03-04",
+        "data": [
+            {
+                "short_term": {
+                    "target_status": "set"
+                },
+                "long_term": {
+                    "target_status": "set",
+                    "target": "1.5",
+                    "year": 2040
+                },
+                "net_zero": {
+                    "target_status": "set",
+                    "year": 2050
+                },
+                "business_ambition_1_5": {
+                    "target_status": "committed",
+                    "joined_at": "2022-11-01"
+                },
+                "target_detail": "The targets covering greenhouse gas emissions from company operations",
+                "submitted_at": "2023-02-01",
+                "retrieved_at": "2023-03-04"
+            }
+        ]
+    }
+}]

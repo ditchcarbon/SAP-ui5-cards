@@ -1,0 +1,44 @@
+{
+	"sap.app": {
+		"id": "card.explorer.bulletChart.list.card",
+		"type": "card",
+		"title": "Sample of a List with Bullet Chart",
+		"subTitle": "Sample of a List with Bullet Chart",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "A short title for this Card",
+		"info": "Additional information about this Card",
+		"description": "A long description for this Card",
+		"tags": {
+			"keywords": [
+				"List",
+				"Chart",
+				"Card",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://list"
+		}
+	},
+	"sap.card": {
+		"extension": "./Extension",
+		"type": "List",
+		"header": {
+			"title": "emissions-trends",
+			"icon": {
+				"src": "sap-icon://area-chart"
+			}
+		},
+		"content": {
+			"item": {
+				"title": "Here is the expanded card"
+			}
+			
+		}
+	}
+}

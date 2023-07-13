@@ -1,0 +1,12 @@
+{
+    "id": "org_a9d336",
+    "name": "aes corporation",
+    "hq_region": "US",
+    "hq_city_name": "Arlington County",
+    "website": "www.aes.com",
+    "industry_id": "ind_3b9869",
+    "rank": "high",
+    "industry_rank": "very_high",
+    "region_rank": "medium",
+    "has_related_environmental_report": true
+}

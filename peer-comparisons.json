@@ -1,0 +1,85 @@
+{
+	"sap.app": {
+		"id": "card.explorer.bulletChart.list.card",
+		"type": "card",
+		"title": "Sample of a List with Bullet Chart",
+		"subTitle": "Sample of a List with Bullet Chart",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "A short title for this Card",
+		"info": "Additional information about this Card",
+		"description": "A long description for this Card",
+		"tags": {
+			"keywords": [
+				"List",
+				"Chart",
+				"Card",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://list"
+		}
+	},
+	"sap.card": {
+		"type": "table",
+		"header": {
+			"title": "Supplier Comparison Summary",
+			"subTitle": "company name"
+		},
+
+		"content": {
+			"data": {
+                "request": {
+                    "url": "https://www.jsonkeeper.com/b/CSE0"
+                }
+            },
+			
+			"maxItems": 9,
+			"row": {
+				"columns": [{
+						"title": "Supplier",
+						"value": "{name}",
+						"identifier": true
+					},
+					{
+						"title": "HQ",
+						"value": "{hq_region}"
+					},
+					{
+						"title": "Carbon Intensity",
+						"value": "{/performances}"
+					},
+					{
+						"title": "Overall",
+						"progressIndicator": {
+							"percent": "{emission_factor}",
+							"text": "{= format.percent(${emission_factor} / 100)}",
+							"state": "{statusState}"
+						}
+					},
+					{
+						"title": "CDP Disclosed",
+						"value": "{status}"
+					},
+					{
+						"title": "SBTi Committed",
+						"value": "{status}"
+					},
+					{
+						"title": "Scopes 1+2",
+						"value": "{/performances[0].scope_1_and_2_emissions}"
+					},
+					{
+						"title": "Scope 3",
+						"value": "{/performances[0].scope_3_emissions}"
+					}
+				]
+			}
+		}
+	}
+}

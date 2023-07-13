@@ -1,0 +1,100 @@
+{
+    "sap.app": {
+        "id": "card.explorer.bulletChart.list.card",
+        "type": "card",
+        "title": "Sample of a List with Bullet Chart",
+        "subTitle": "Sample of a List with Bullet Chart",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "shortTitle": "A short title for this Card",
+        "info": "Additional information about this Card",
+        "description": "A long description for this Card",
+        "tags": {
+            "keywords": [
+                "List",
+                "Chart",
+                "Card",
+                "Sample"
+            ]
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://list"
+        }
+    },
+    "sap.card": {
+        "extension": "./Extension",
+        "type": "List",
+        "header": {
+            "title": "Supplier Summary Scorecard",
+            "icon": {
+                "src": "./square-dc-logo.png",
+                "shape": "Square"
+            },
+            "actions": [
+                {
+                    "type": "Navigation",
+                    "url": "https://ditchcarbon.com/"
+                }
+            ],
+            "data": {
+                "request": {
+                    "url": "./manifest-header.json"
+                }
+            },
+            "subTitle": "{name}\n Has related environmental report? {= extension.formatters.getReportIcon(${has_related_environmental_report})}"
+        },
+        "content": {
+            "data": {
+                "request": {
+                    "url": "./data.json"
+                }
+            },
+            "item": {
+                "title": "{name}",
+                "info": {
+                    "value": "{name}"
+                },
+                "chart": {
+                    "type": "Bullet",
+                    "minValue": 0,
+                    "maxValue": 100,
+                    "value": "{= extension.formatters.getNumber(${rank})}",
+                    "scale": "%",
+                    "displayValue": "{rank}",
+                    "color": "{= extension.formatters.getColour(${rank})}"
+                }
+            }
+        },
+        "footer": {
+            "actionsStrip": [
+                {
+                    "text": "View emissions trends",
+                    "actions": [
+                        {
+                            "type": "ShowCard",
+                            "parameters": {
+                                "manifest": "./emissions-trends.json"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "View peer comparisons",
+                    "actions": [
+                        {
+                            "type": "ShowCard",
+                            "parameters": {
+                                "manifest": "./peer-comparisons.json"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "designtime": "sap/ui/integration/designtime/cardEditor/ConfigurationTemplate"
+    }
+}
